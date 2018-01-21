@@ -1,0 +1,28 @@
+~~~ Gentrack Project ~~~~
+
+Files includes:
+README - this file.
+Maze.java - Defines a Maze class
+GentrackProject.java - Software driver
+tests - Directory consists of tests
+
+How to run this software:
+
+1. Extract Maze.java, GentrackProject.java, tests to a folder.
+2. Edit path of tests folder according (line 81 in GentrackProject.java)
+3. Compile both Maze.java and GentrackProject.java using JRE 9.
+   (the Main is found in GentrackProject.java.)
+4. Run!
+
+Theoretical debate:
+Let us analysis the complexity of this programme.
+Let m, n be the dimensions of the maze respectively.
+The programme consists of three steps:
+- It iterates over the maze matrix, assigning all characters - O(m*n)
+- Path finder, iterates recursively upon all vertices in the maze,
+  "touches" each vertex once utmost. Temporal complexity is, thus, O(m*n)
+- In case path is found, the programme iterates over all vertices
+  once more in order to print them. Again this procedure is O(m*n).
+Overall, the complexity of the programme is O(m*n) at the worst case.
+
+Created by Tomer Levy.
